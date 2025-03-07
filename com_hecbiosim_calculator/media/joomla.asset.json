@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_hecbiosim_calculator",
+  "version": "CVS: 0.0.1",
+  "license": "MIT",
+  "assets": [
+    {
+      "name": "com_hecbiosim_calculator.admin",
+      "type": "style",
+      "uri": "com_hecbiosim_calculator/admin.css"
+    },
+    {
+      "name": "com_hecbiosim_calculator.admin",
+      "type": "script",
+      "uri": "com_hecbiosim_calculator/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_hecbiosim_calculator.list",
+        "type": "style",
+        "uri": "com_hecbiosim_calculator/list.css"
+    }
+  ]
+}

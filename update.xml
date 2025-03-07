@@ -1,0 +1,24 @@
+<updates>
+    <update>
+        <name>HECBioSim HPC Calculator</name>
+        <description>A Joomla component for predicting HPC resource requests.</description>
+        <element>com_hecbiosim_calculator</element>
+        <type>component</type>
+        <version>x.y.z</version>
+        <infourl title="HECBioSim HPC Calculator">
+            https://github.com/HECBioSim/com_hecbiosim_calculator
+        </infourl>
+        <downloads>
+        <downloadsource type="full" format="zip">
+            https://github.com/hecbiosim/com_hecbiosim_calculator/releases/download/x.y.z/com_hecbiosim_calculator-x.y.z.zip
+        </downloadsource>
+        </downloads>
+        <tags>
+            <tag>dev</tag>
+        </tags>
+        <php_minimum>8.2</php_minimum>
+        <maintainer>HECBioSim Dev Team</maintainer>
+        <maintainerurl>https://www.hecbiosim.ac.uk</maintainerurl>
+        <targetplatform name="joomla" version="5.[123456789]"/>
+    </update>
+</updates>
