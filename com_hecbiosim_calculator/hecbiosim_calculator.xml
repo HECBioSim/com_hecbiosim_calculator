@@ -46,9 +46,9 @@
             <folder>presets</folder>
         </files>
 
-        <languages folder="administrator/languages">          
-			      <language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
-			      <language tag="en-GB">en-GB/com_hecbiosim_calculator.sys.ini</language>
+        <languages folder="administrator/languages">
+	    <language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
+            <language tag="en-GB">en-GB/com_hecbiosim_calculator.sys.ini</language>
         </languages>
     </administration>
 
@@ -64,6 +64,6 @@
     </plugins>
     
     <updateservers>
-        <server type="extension" priority="1" name="com_hecbiosim_calculator">https://github.com/HECBioSim/com_hecbiosim_impact/edit/main/update.xml</server>
+        <server type="extension" priority="1" name="com_hecbiosim_calculator">https://raw.githubusercontent.com/HECBioSim/com_hecbiosim_calculator/refs/heads/main/update.xml</server>
     </updateservers>
 </extension>
