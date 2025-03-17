@@ -19,6 +19,81 @@ use Joomla\Utilities\ArrayHelper;
 
 ?>
 
+<style>
+.hec-calculator label{
+    font-weight:bold;
+}
+
+.hec-calculator select, .hec-calculator input{
+    display:block;
+    line-height: inherit;
+    background-color: transparent;
+    border: 1px solid #dfe3e7;
+    border-radius: 0.25em;
+    padding: 0.33em 0.33em 0.33em 0.33em;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom:0.5em;
+    width:100%;
+    height:2rem;
+    box-sizing:border-box;
+}
+
+#results i{
+min-width:16px;
+text-align:right;
+}
+
+.ns-day i{color:var(--teal)}
+.storage-gb i{color:var(--purple)}
+.node-hours i{color:var(--green)}
+.max-nodes i{color:var(--yellow)}
+.power-kwh i{color:orange}
+.message{color:var(--danger)}
+</style>
+
+<!--<link rel="stylesheet" href="https://dev.hecbiosim.ac.uk/media/templates/site/cassiopeia/css/template.min.css"> -->
+<!-- <link rel="stylesheet" href="https://dev.hecbiosim.ac.uk/media/system/css/joomla-fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+   <div class="card">
+      <div class="card-body hec-calculator">
+         <h2>HECBioSim HPC Calculator</h2>
+         <noscript>
+            <h2>Please enable javascript! (sorry)</h2>
+         </noscript>
+         <form id="hpc">
+            <div class="row">
+               <div class="col-3">
+                  <label for="hpc-system">HPC System:</label>
+                  <select id="hpc-system" name="hpc-system">
+                  </select>
+               </div>
+               <div class="col-3">
+                  <label for="software">Software:</label>
+                  <select id="software" name="software">
+                     <option>Select a system first</option>
+                  </select>
+               </div>
+               <div class="col-3">
+                  <label for="atoms">No. of atoms to simulate:</label>
+                  <input type="number" id="atoms" name="atoms" />
+               </div>
+               <div class="col-3">
+                  <label for="ns">Simulation time (ns):</label>
+                  <input type="number" id="ns" name="ns" />
+               </div>
+            </div>
+         </form>
+         <div id="results"></div>
+      </div>
+   </div>
+   <p><small>Values given by this tool are approximate. Values are calculated from are calculated from the <a href="https://github.com/HECBioSim/benchmark-results">HECBioSim benchmark results</a>. Storage requirements assume that trajectories are being stored in DCD/HDF5/NetCDF format with one frame per picosecond of simulation time. UK home power usage is based on <a href="https://www.ofgem.gov.uk/decision/decision-typical-domestic-consumption-values-2023">values from OFGEM in 2023</a>. For more detailed information on performance or the benchmark methodolgy, see <a href="#">Engineering Supercomputing Platforms for Biomolecular Applications</a>.</p>
+   </small>
+</div>
+
+
 <script>
 // this is temporary until it can be hosted somewhere else
 const data = {
@@ -119,11 +194,11 @@ const data = {
                     12.251956799916995,
                     -17.949803507826783
                 ],
-                "J/ns": [
-                    2.695029544215566e-13,
-                    -9.707085606730863e-07,
-                    2.821626286284685,
-                    19148.76348340309
+                "J/ns": [https://dev.hecbiosim.ac.uk/index.php/access-hpc/hpc-calculator
+                2.695029544215566e-13,
+                -9.707085606730863e-07,
+                2.821626286284685,
+                19148.76348340309
                 ]
             },
             "Machine": "JADE2",
@@ -337,7 +412,7 @@ const data = {
             "Machine": "LUMI-G",
             "program": "GROMACS",
             "log": {
-                "ns/day": true,
+                "ns/day": true,https://dev.hecbiosim.ac.uk/index.php/access-hpc/hpc-calculator
                 "J/ns": false
             },
             "eqns": {
@@ -755,79 +830,3 @@ function update_results(){
 }
 
 </script>
-
-<style>
-.hec-calculator label{
-    font-weight:bold;
-}
-
-.hec-calculator select, .hec-calculator input{
-    display:block;
-    line-height: inherit;
-    background-color: transparent;
-    border: 1px solid #dfe3e7;
-    border-radius: 0.25em;
-    padding: 0.33em 0.33em 0.33em 0.33em;
-    font-family: inherit;
-    font-size: inherit;
-    margin-bottom:0.5em;
-    width:100%;
-    height:2rem;
-    box-sizing:border-box;
-}
-
-#results i{
-min-width:16px;
-text-align:right;
-}
-
-.ns-day i{color:var(--teal)}
-.storage-gb i{color:var(--purple)}
-.node-hours i{color:var(--green)}
-.max-nodes i{color:var(--yellow)}
-.power-kwh i{color:orange}
-.message{color:var(--danger)}
-</style>
-
-<!--<link rel="stylesheet" href="https://dev.hecbiosim.ac.uk/media/templates/site/cassiopeia/css/template.min.css"> -->
-<!-- <link rel="stylesheet" href="https://dev.hecbiosim.ac.uk/media/system/css/joomla-fontawesome.min.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="container">
-   <div class="card">
-      <div class="card-body hec-calculator">
-         <h2>HECBioSim HPC Calculator</h2>
-         <noscript>
-            <h2>Please enable javascript! (sorry)</h2>
-         </noscript>
-         <form id="hpc">
-            <div class="row">
-               <div class="col-3">
-                  <label for="hpc-system">HPC System:</label>
-                  <select id="hpc-system" name="hpc-system">
-                  </select>
-               </div>
-               <div class="col-3">
-                  <label for="software">Software:</label>
-                  <select id="software" name="software">
-                     <option>Select a system first</option>
-                  </select>
-               </div>
-               <div class="col-3">
-                  <label for="atoms">No. of atoms to simulate:</label>
-                  <input type="number" id="atoms" name="atoms" />
-               </div>
-               <div class="col-3">
-                  <label for="ns">Simulation time (ns):</label>
-                  <input type="number" id="ns" name="ns" />
-               </div>
-            </div>
-         </form>
-         <div id="results"></div>
-      </div>
-   </div>
-   <p><small>Values given by this tool are approximate. Values are calculated from are calculated from the <a href="https://github.com/HECBioSim/benchmark-results">HECBioSim benchmark results</a>. Storage requirements assume that trajectories are being stored in DCD/HDF5/NetCDF format with one frame per picosecond of simulation time. UK home power usage is based on <a href="https://www.ofgem.gov.uk/decision/decision-typical-domestic-consumption-values-2023">values from OFGEM in 2023</a>. For more detailed information on performance or the benchmark methodolgy, see <a href="#">Engineering Supercomputing Platforms for Biomolecular Applications</a>.</p>
-   </small>
-</div>
-
-
