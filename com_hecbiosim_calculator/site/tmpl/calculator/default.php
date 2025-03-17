@@ -194,7 +194,7 @@ const data = {
                     12.251956799916995,
                     -17.949803507826783
                 ],
-                "J/ns": [https://dev.hecbiosim.ac.uk/index.php/access-hpc/hpc-calculator
+                "J/ns": [
                 2.695029544215566e-13,
                 -9.707085606730863e-07,
                 2.821626286284685,
@@ -412,7 +412,7 @@ const data = {
             "Machine": "LUMI-G",
             "program": "GROMACS",
             "log": {
-                "ns/day": true,https://dev.hecbiosim.ac.uk/index.php/access-hpc/hpc-calculator
+                "ns/day": true,
                 "J/ns": false
             },
             "eqns": {
