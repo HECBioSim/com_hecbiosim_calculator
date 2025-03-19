@@ -1,69 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="4.0" method="upgrade">
-    <name>com_hecbiosim_calculator</name>
-    <creationDate>2025-03-07</creationDate>
-    <copyright>2025 HECBioSim Team</copyright>
-    <license>MIT</license>
-    <author>James Gebbie-Rayet</author>
-    <authorEmail>james.gebbie@gmail.com</authorEmail>
-    <authorUrl>https://github.com/jimboid</authorUrl>
-    <version>v0.0.1</version>
-    <description>A HECBioSim plugin for predicting HPC resources for biomolecular simulations.</description>
-    <namespace path="src">Hecbiosim\Component\Hecbiosim_calculator</namespace>
-
-    <install> <!-- Runs on install -->
-    </install>
-    <update> <!-- Runs on update -->
-    </update>
-    <uninstall> <!-- Runs on uninstall -->
-    </uninstall>
-
-    <files folder="site">
-        <folder>src</folder>        
-        <folder>tmpl</folder>
-    </files>
-
-    <media destination="com_hecbiosim_calculator" folder="media">
-        <folder>css</folder>
-        <folder>js</folder>
-        <filename>joomla.asset.json</filename>
-    </media>
-
-    <languages folder="site/languages">        
-			<language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
-    </languages>
-
-    <administration>
-        <submenu>
+  <name>com_hecbiosim_calculator</name>
+  <creationDate>2025-03-07</creationDate>
+  <copyright>2025 HECBioSim Team</copyright>
+  <license>MIT</license>
+  <author>James Gebbie-Rayet</author>
+  <authorEmail>james.gebbie@gmail.com</authorEmail>
+  <authorUrl>https://github.com/jimboid</authorUrl>
+  <version>v0.1.0</version>
+  <description>A HECBioSim plugin for predicting HPC resources for biomolecular simulations.</description>
+  <namespace path="src">Hecbiosim\Component\Hecbiosim_calculator</namespace>
+  <install>
+    <!-- Runs on install -->
+  </install>
+  <update>
+    <!-- Runs on update -->
+  </update>
+  <uninstall>
+    <!-- Runs on uninstall -->
+  </uninstall>
+  <files folder="site">
+    <folder>src</folder>
+    <folder>tmpl</folder>
+  </files>
+  <media destination="com_hecbiosim_calculator" folder="media">
+    <folder>css</folder>
+    <folder>js</folder>
+    <filename>joomla.asset.json</filename>
+  </media>
+  <languages folder="site/languages">
+    <language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
+  </languages>
+  <administration>
+    <submenu>
         </submenu>
-
-        <files folder="administrator">
-            <filename>access.xml</filename>
-            <filename>config.xml</filename>
-            <folder>src</folder>
-            <folder>tmpl</folder>
-            <folder>services</folder>
-            <folder>presets</folder>
-        </files>
-
-        <languages folder="administrator/languages">
-	    <language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
-            <language tag="en-GB">en-GB/com_hecbiosim_calculator.sys.ini</language>
-        </languages>
-    </administration>
-
-    <config>
-        <fields name="params">
-            <fieldset name="component">
-                <field name="save_history" default="0" />
-            </fieldset>
-        </fields>
-    </config>
-
-    <plugins>
+    <files folder="administrator">
+      <filename>access.xml</filename>
+      <filename>config.xml</filename>
+      <folder>src</folder>
+      <folder>tmpl</folder>
+      <folder>services</folder>
+      <folder>presets</folder>
+    </files>
+    <languages folder="administrator/languages">
+      <language tag="en-GB">en-GB/com_hecbiosim_calculator.ini</language>
+      <language tag="en-GB">en-GB/com_hecbiosim_calculator.sys.ini</language>
+    </languages>
+  </administration>
+  <config>
+    <fields name="params">
+      <fieldset name="component">
+        <field name="save_history" default="0"/>
+      </fieldset>
+    </fields>
+  </config>
+  <plugins>
     </plugins>
-    
-    <updateservers>
-        <server type="extension" priority="1" name="com_hecbiosim_calculator">https://hecbiosim.github.io/com_hecbiosim_calculator/update.xml</server>
-    </updateservers>
+  <updateservers>
+    <server type="extension" priority="1" name="com_hecbiosim_calculator">https://hecbiosim.github.io/com_hecbiosim_calculator/update.xml</server>
+  </updateservers>
 </extension>
