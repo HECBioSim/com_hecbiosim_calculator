@@ -64,6 +64,6 @@
     </plugins>
     
     <updateservers>
-        <server type="extension" priority="1" name="com_hecbiosim_calculator">https://raw.githubusercontent.com/HECBioSim/com_hecbiosim_calculator/refs/heads/main/update.xml</server>
+        <server type="extension" priority="1" name="com_hecbiosim_calculator">https://hecbiosim.github.io/com_hecbiosim_calculator/update.xml</server>
     </updateservers>
 </extension>
