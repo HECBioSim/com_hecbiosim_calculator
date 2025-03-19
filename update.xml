@@ -9,12 +9,10 @@
             https://github.com/HECBioSim/com_hecbiosim_calculator
         </infourl>
         <downloads>
-        <downloadsource type="full" format="zip">
-            https://github.com/hecbiosim/com_hecbiosim_calculator/releases/download/x.y.z/com_hecbiosim_calculator-x.y.z.zip
-        </downloadsource>
+          <downloadurl type="full" format="zip">https://github.com/hecbiosim/com_hecbiosim_impact/releases/download/0.1.0/com_hecbiosim_impact-0.1.0.zip</downloadurl>
         </downloads>
         <tags>
-            <tag>dev</tag>
+            <tag>stable</tag>
         </tags>
         <php_minimum>8.2</php_minimum>
         <maintainer>HECBioSim Dev Team</maintainer>
