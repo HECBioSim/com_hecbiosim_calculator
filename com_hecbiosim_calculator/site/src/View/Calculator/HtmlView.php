@@ -13,9 +13,7 @@ use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use \Joomla\CMS\Factory;
 use \Joomla\CMS\Language\Text;
 
-/**
- * View class for a list of hecbiosim_calculator.
- */
+// View class for a list of hecbiosim_calculator.
 class HtmlView extends BaseHtmlView
 {
 	protected $state;

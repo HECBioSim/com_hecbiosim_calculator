@@ -13,9 +13,7 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Controller\BaseController;
 use Joomla\CMS\Router\Route;
 
-/**
- * hecbiosim_calculator master display controller.
- */
+// hecbiosim_calculator master display controller.
 class DisplayController extends BaseController
 {
 	/**
