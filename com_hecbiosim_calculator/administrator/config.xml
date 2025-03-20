@@ -23,8 +23,6 @@
 
         <field name="history_limit" type="text" filter="integer" label="JGLOBAL_HISTORY_LIMIT_OPTIONS_LABEL" description="JGLOBAL_HISTORY_LIMIT_OPTIONS_DESC" default="5"/>
 
-      
-
         <field
           name="sef_ids"
           type="radio"

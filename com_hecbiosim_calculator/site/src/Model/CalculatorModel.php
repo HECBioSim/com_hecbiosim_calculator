@@ -19,9 +19,7 @@ use \Joomla\CMS\Object\CMSObject;
 use \Joomla\CMS\User\UserFactoryInterface;
 use \Hecbiosim\Component\Hecbiosim_calculator\Site\Helper\Hecbiosim_calculatorHelper;
 
-/**
- * hecbiosim_calculator model.
- */
+// hecbiosim_calculator model.
 class CalculatorModel extends ItemModel
 {
 	protected function populateState()
