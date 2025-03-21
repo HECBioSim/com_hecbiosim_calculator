@@ -60,7 +60,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
         with:
-          ref: ${{ github.ref }}
+          ref: main
 
       - name: Tag v${{ github.event.inputs.version }}
         run: |
