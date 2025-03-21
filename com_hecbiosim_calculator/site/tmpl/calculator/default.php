@@ -16,8 +16,15 @@ use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Session\Session;
 use Joomla\Utilities\ArrayHelper;
 
+$params  = $this->item->params;
 
 ?>
+
+<?php if ($this->params->get('show_page_heading')) : ?>
+    <div class="page-header">
+        <h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
+    </div>
+<?php endif; ?>
 
 <style>
 .hec-calculator label{
@@ -59,7 +66,6 @@ text-align:right;
 <div class="container">
    <div class="card">
       <div class="card-body hec-calculator">
-         <h2>HECBioSim HPC Calculator</h2>
          <noscript>
             <h2>Please enable javascript! (sorry)</h2>
          </noscript>
