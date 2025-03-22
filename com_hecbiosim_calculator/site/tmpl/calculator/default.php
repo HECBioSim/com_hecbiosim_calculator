@@ -26,7 +26,7 @@ $params  = $this->item->params;
     </div>
 <?php endif; ?>
 
-<link rel="stylesheet" href="media/com_hecbiosim_calculator/css/publication.css">
+<link rel="stylesheet" href="media/com_hecbiosim_calculator/css/calculator.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="media/com_hecbiosim_calculator/js/calculator.js" type="text/javascript"></script>
 
