@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
   "name": "com_hecbiosim_calculator",
-  "version": "CVS: 0.0.1",
+  "version": "0.2.4",
   "license": "MIT",
   "assets": [
     {
@@ -21,9 +21,14 @@
       }
     },
     {
-        "name": "com_hecbiosim_calculator.list",
+        "name": "com_hecbiosim_calculator.calculator",
         "type": "style",
-        "uri": "com_hecbiosim_calculator/list.css"
+        "uri": "com_hecbiosim_calculator/calculator.css"
+    },
+    {
+        "name": "com_hecbiosim_calculator.calculator",
+        "type": "script",
+        "uri": "com_hecbiosim_calculator/calculator.js"
     }
   ]
 }
