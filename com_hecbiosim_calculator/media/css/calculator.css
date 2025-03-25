@@ -18,8 +18,13 @@
 }
 
 #results i{
-min-width:16px;
-text-align:right;
+    min-width:16px;
+    text-align:right;
+}
+
+.card{
+    margin-bottom:1rem;
+    margin-top:1rem;
 }
 
 .ns-day i{color:var(--teal)}
