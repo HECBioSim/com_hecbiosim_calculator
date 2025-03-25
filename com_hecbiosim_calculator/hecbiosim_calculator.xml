@@ -7,7 +7,7 @@
   <author>James Gebbie-Rayet</author>
   <authorEmail>james.gebbie@gmail.com</authorEmail>
   <authorUrl>https://github.com/jimboid</authorUrl>
-  <version>v0.2.5</version>
+  <version>v0.3.0</version>
   <description>A HECBioSim plugin for predicting HPC resources for biomolecular simulations.</description>
   <namespace path="src">Hecbiosim\Component\Hecbiosim_calculator</namespace>
   <install>
