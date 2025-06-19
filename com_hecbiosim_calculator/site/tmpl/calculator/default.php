@@ -60,7 +60,7 @@ $params  = $this->item->params;
             <div id="results"></div>
         </div>
     </div>
-    <p>Values given by this tool are approximate. Values are calculated from are calculated from the <a href="https://github.com/HECBioSim/benchmark-results">HECBioSim benchmark results</a>. Storage requirements assume that trajectories are being stored in DCD/HDF5/NetCDF format with one frame per picosecond of simulation time. UK home power usage is based on <a href="https://www.ofgem.gov.uk/decision/decision-typical-domestic-consumption-values-2023">values from OFGEM in 2023</a>. For more detailed information on performance or the benchmark methodolgy, see <a href="">Engineering Supercomputing Platforms for Biomolecular Applications</a>.</p>
+    <p>Values given by this tool are approximate. Values are calculated from are calculated from the <a href="https://github.com/HECBioSim/benchmark-results">HECBioSim benchmark results</a>. Storage requirements assume that trajectories are being stored in DCD/HDF5/NetCDF format with one frame per picosecond of simulation time. UK home power usage is based on <a href="https://www.ofgem.gov.uk/decision/decision-typical-domestic-consumption-values-2023">values from OFGEM in 2023</a>. For more detailed information on performance or the benchmark methodolgy, see <a href="https://arxiv.org/pdf/2506.15585">Engineering Supercomputing Platforms for Biomolecular Applications</a>.</p>
 </div>
 
 <script type="module" src="media/com_hecbiosim_calculator/js/calculator.js" type="text/javascript"></script>
