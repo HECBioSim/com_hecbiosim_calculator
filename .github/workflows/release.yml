@@ -20,7 +20,7 @@ jobs:
         run: sudo apt install xmlstarlet
 
       - name: checkout
-        uses: actions/checkout@v5.0.1
+        uses: actions/checkout@v6.0.0
 
       - name: Inject version number into plugin source
         run: xmlstarlet ed --inplace -u "/extension/version" -v v${{ github.event.inputs.version }} com_hecbiosim_calculator/hecbiosim_calculator.xml
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.1
+        uses: actions/checkout@v6.0.0
         with:
           ref: main
 
