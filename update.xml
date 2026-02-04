@@ -17,6 +17,6 @@
     <php_minimum>8.2</php_minimum>
     <maintainer>HECBioSim Dev Team</maintainer>
     <maintainerurl>https://www.hecbiosim.ac.uk</maintainerurl>
-    <targetplatform name="joomla" version="5.[123456789]"/>
+    <targetplatform name="joomla" version="6.[0123456789]"/>
   </update>
 </updates>
